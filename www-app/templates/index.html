@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+
+    <style>
+
+    </style>
+
+    <title>BigClown.com - LoRa infrared camera</title>
+</head>
+
+<body>
+
+    <!-- <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+        <img src="https://www.bigclown.com/_assets/svg/bigclown-icon.svg" width="60" /> &nbsp;&nbsp;&nbsp;&nbsp;
+        <h5 class="my-0 mr-md-auto font-weight-normal"><a href="https://bigclown.com">BigClown.com</a> - LoRa</h5>
+    </div> -->
+    <div class="container">
+        <table id="table"></table>
+
+        <form id="formText" method="POST" action="/send-text">
+
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputText">Text</label>
+                    <input type="text" class="form-control" id="inputText" placeholder="Text" name="text" value="BigClown">
+                    <small class="form-text text-muted">max 16 laters</small>
+                </div>
+
+                <div class="form-group col-md-1">
+                    <label for="inputX">X</label>
+                    <input type="number" class="form-control" id="inputX" placeholder="X" name="x" value="5">
+                    <small class="form-text text-muted">from 0 to 127</small>
+                </div>
+
+                <div class="form-group col-md-1">
+                    <label for="inputX">Y</label>
+                    <input type="number" class="form-control" id="inputX" placeholder="Y" name="y" value="5">
+                    <small class="form-text text-muted">from 0 to 127</small>
+                </div>
+
+                <div class="form-group col-md-1">
+                    <br />
+                    <input class="form-check-input" type="checkbox" id="gridCheck1" name="clear">
+                    <label class="form-check-label" for="gridCheck1">
+                      Clear
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group col-md-2">
+
+                <label for="">&nbsp;</label>
+                <button type="submit" class="form-control btn btn-primary">Send</button>
+
+            </div>
+
+        </form>
+
+
+    </div>
+
+    <!-- <script src="/static/js/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script> -->
+
+</body>
+
+</html>
